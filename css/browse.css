@@ -1,0 +1,10 @@
+.community-intro {
+    background: linear-gradient(to right, grey , lightblue);
+    min-height: 40vh;
+
+}
+
+.profile-picture {
+    background: linear-gradient(to left, grey , lightblue);
+    height: 12vh;
+}

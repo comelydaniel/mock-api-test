@@ -1,0 +1,64 @@
+.header {
+    background: linear-gradient(to right, grey , lightblue);
+}
+
+.profile .bg-profile {
+    position: relative;
+    width: 50%;
+}
+
+.profile .profile-img {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+}
+
+.profile .profile-img img {
+    border: 5px solid #fff;
+    border-radius: 50%;;
+}
+
+.input-post, .edit-post {
+   position: fixed;
+   width: 80%;
+   min-height: 50vh;
+   background: linear-gradient(to top, grey , lightblue);
+   border: 1px solid transparent;
+   border-radius: 20px;
+   z-index: 12;
+   top: 100px;
+   left: 10px;
+   right: 10px;
+   z-index: 12;
+   display: none;
+}
+
+.float {
+    display: block;
+}
+
+.card {
+    box-shadow: 2px 2px 10px grey;
+    transition: all 0.5 ease-in-out;
+}
+
+.card:hover {
+     transform: scale(1.05);
+}
+
+.footer {
+    background: linear-gradient(to left, grey , lightblue);
+}
+
+
+@media (max-width: 769px) {
+    .profile .profile-img {
+        top: 44%;
+    }
+}
+
+@media (max-width: 321px) {
+    #edit-post, #delete-post, #view-more {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/browse.css">
+    <title>Read Other's Stories</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-expand-md">
+            <div class="container">
+              <a class="navbar-brand fw-bold" href="#">Your Stories</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link link-dark fw-bold" href="index.html">myStories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-dark active fw-bold" aria-current="page" href="browse.html">Community</a>
+                  </li>
+                  <li class="nav-item d-none">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <section class="community-intro text-white pb-4">
+      <div class="container pt-5">
+        <h2 class=" fw-bold">Take a trip to another World!!!</h2>
+        <p class="fw-bold">What does stories mean for you? Whether for fun, for escape, for relaxation or just to take your mind off things. We've got you. Our community space offers a chance to read to your heart content and also INTERACT! myStories is a social media website that allows users to share their stories and experiences.</p>
+        <p>Wanna share your own story too? <a href="#" class="text-black text-decoration-none">Register here</a> for your own blog space.</p>
+        <p>Already have a space? <a href="index.html" class="text-black text-decoration-none">Login here</a> and share your thoughts.</p>
+      </div>
+    </section>
+    <section class="browse-more d-flex flex-column flex-lg-row flex-md-row justify-content-evenly pt-5 ps-3">
+        <h4>Relate with others through stories....</h4>
+        <div>
+            <button class="btn btn-primary" id="get-stories">Browse new stories</button>
+        </div>
+    </section>
+    <section >
+      <div class="new-post container pt-5">
+        <div class="row" id="new-post"></div>
+      </div>
+    </section>
+    <section class="postcards">
+      <div class="container mb-5">
+          <div class="row" id="row">
+            <div class="col-lg-4">
+              <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="btn btn-primary" id="view-more" type="button">View More</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="container pt-5">
+          <div class="row">
+              <div class="col-lg-4">
+                  <h5>myStories</h5>
+                  <p>myStories is a social media website that allows users to share their stories and experiences.</p>
+              </div>
+              <div class="col-lg-4">
+                <h5>Contact Us</h5>
+                <p><a href="mailto:somebody@gmail.com" class="text-decoration-none link-dark">Send an email </a></p>
+                <p><a href="tel:+1-555-555-5555" class="text-decoration-none link-dark">Call us</a></p>
+            </div>
+            <div class="col-lg-4">
+              <h5>Features</h5>
+              <p><a href="index.html" class="text-decoration-none link-dark">Login to your Space</a></p>
+              <p><a href="#" class="text-decoration-none link-dark">Register for a Space</a></p>
+              <p><a href="browse.html" class="text-decoration-none link-dark">Browse through our community</a></p>
+          </div>
+          </div>
+      </div>
+   </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/browse.js"></script>
+</body>
+</html>

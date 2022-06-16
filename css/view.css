@@ -1,0 +1,21 @@
+.view-section {
+    min-height: 20vh;
+}
+
+
+.view-picture {
+    width: 10%;
+}
+
+.view-picture-two {
+    background: linear-gradient(to left, grey , lightblue);
+    height: 15vh;
+    width: 10%;
+}
+
+@media (max-width: 769px) {
+    .view-picture-two {
+        height: 12vh;
+        width: 15%;
+    }
+}
