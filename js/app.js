@@ -19,6 +19,7 @@ let image = "img/comely.jpg"
 
 outPut = "";
 
+
 const renderPost = (posts) => {
     posts.forEach(post => {
       outPut +=  `  <div class="col-lg-4 col-md-6 mt-4">
@@ -34,7 +35,7 @@ const renderPost = (posts) => {
             <h5 class="card-title">${post.title}</h5>
             <p class="card-text">${post.body}</p>
             <button class="btn btn-outline-secondary me-4" onclick="editPost(${post.id})" type="button">Edit</button>
-            <a href="/view.html?id=${post.id}" class="btn btn-outline-info me-4" id="view-more">View More</a>
+            <a href="view.html?id=${post.id}" class="btn btn-outline-info me-4" id="view-more">View More</a>
             <button class="btn btn-outline-danger" onclick="deletePost(${post.id})" type="button">Delete</button>
           </div>
         </div>
@@ -111,7 +112,6 @@ function editPost(id) {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
           let postTitles = document.querySelectorAll('.card-title');
           let postBodies = document.querySelectorAll('.card-text');
     
@@ -126,7 +126,7 @@ function editPost(id) {
           postBodies.forEach((postBody, index) => {
             if(index + 1 === id) {
               if(data.title !== "") {
-                postBody.innerHTML = data.title;
+                postBody.innerHTML = data.body;
               }
             }
           })
@@ -137,6 +137,8 @@ function editPost(id) {
       })
     
 }  
+
+
 
 
 
