@@ -35,7 +35,7 @@ const renderPost = (posts) => {
             <h5 class="card-title">${post.title}</h5>
             <p class="card-text">${post.body}</p>
             <button class="btn btn-outline-secondary me-4" onclick="editPost(${post.id})" type="button">Edit</button>
-            <a href="view.html?id=${post.id}" class="btn btn-outline-info me-4" id="view-more">View More</a>
+            <a href="./view.html?id=${post.id}" class="btn btn-outline-info me-4" id="view-more">View More</a>
             <button class="btn btn-outline-danger" onclick="deletePost(${post.id})" type="button">Delete</button>
           </div>
         </div>

@@ -18,7 +18,7 @@ const allPost = (posts) => {
             <h6 class="card-subtitle mb-2 text-muted">${post.id}</h6>
             <h5 class="card-title">${post.title}</h5>
             <p class="card-text">${post.body}</p>
-            <a href="viewtwo.html?id=${post.id}" class="btn btn-outline-info me-4">View More</a>
+            <a href="./viewtwo.html?id=${post.id}" class="btn btn-outline-info me-4">View More</a>
           </div>
         </div>
     </div> `;
@@ -51,7 +51,7 @@ getButton.addEventListener("click", function () {
                     <div class="card-body">
                       <h5 class="card-title">${data[i].title}</h5>
                       <p class="card-text">${data[i].body}</p>
-                      <a href="viewtwo.html?id=${data[i].id}" class="btn btn-outline-info me-4">View More</a>
+                      <a href="./viewtwo.html?id=${data[i].id}" class="btn btn-outline-info me-4">View More</a>
                     </div>
                   </div>
               </div> `;
