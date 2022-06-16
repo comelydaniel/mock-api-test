@@ -48,7 +48,7 @@ fetch(url)
     .then(response => {
         return response.json()
     })
-    .then(data => renderPost(data))
+    .then(data =>renderPost(data))
 
 //create posts
 addPost.addEventListener("submit", (e) => {
@@ -95,11 +95,9 @@ closeEdit.addEventListener('click', () => {
 
 //edit
 function editPost(id) {
-    console.log(id)
     duvet.classList.add(`float`);
 
     btnEdit.addEventListener('click', () => {
-      console.log(id);
       fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
@@ -114,7 +112,7 @@ function editPost(id) {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          /*let postTitles = document.querySelectorAll('.card-title');
+          let postTitles = document.querySelectorAll('.card-title');
           let postBodies = document.querySelectorAll('.card-text');
     
           postTitles.forEach((postTitle, index) => {
@@ -131,14 +129,14 @@ function editPost(id) {
                 postBody.innerHTML = data.title;
               }
             }
-          })*/
+          })
+          id = ""
         })
+        
         duvet.classList.remove(`float`);
-    })
-     
-   
-    
+      })
     
 }  
+
 
 
