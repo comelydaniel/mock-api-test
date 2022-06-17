@@ -21,7 +21,7 @@
 .input-post, .edit-post {
    position: fixed;
    width: 80%;
-   min-height: 50vh;
+   min-height: 70vh;
    background: linear-gradient(to top, grey , lightblue);
    border: 1px solid transparent;
    border-radius: 20px;
@@ -51,13 +51,17 @@
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
     .profile .profile-img {
-        top: 44%;
+        top: 60%;
     }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 426px) {
+    .profile .profile-img {
+        top: 43%;
+    }
+
     #edit-post, #delete-post, #view-more {
         margin: 0 !important;
     }

@@ -1,6 +1,6 @@
 const id = new URLSearchParams(window.location.search).get('id');
 const container = document.querySelector('.view-more');
-const btnDelete = document.getElementById('delete');
+const btnBack = document.getElementById('back');
 
 const renderDetails = async () => {
     const res = await fetch ('https://jsonplaceholder.typicode.com/posts/' + id);
@@ -14,12 +14,12 @@ const renderDetails = async () => {
     container.innerHTML = story;
 }
 
-btnDelete.addEventListener('click', async (e) => {
+btnBack.addEventListener('click', async (e) => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + id, {
         method: 'DELETE'
     })
 
-    window.location.replace('/index.html')
+    window.location.replace('./index.html')
 })
 
 window.addEventListener('DOMContentLoaded', () => renderDetails());

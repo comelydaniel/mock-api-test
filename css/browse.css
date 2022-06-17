@@ -8,3 +8,10 @@
     background: linear-gradient(to left, grey , lightblue);
     height: 12vh;
 }
+
+
+@media (max-width: 769px) {
+    .profile-picture {
+        width: 18% !important;
+    }
+}

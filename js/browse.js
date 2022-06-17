@@ -12,7 +12,7 @@ const allPost = (posts) => {
       <div class="card mb-3 h-100">
           <div class="ps-3 pt-3">
               <div class="profile-picture w-25 rounded-circle"></div>
-              <h4>Profile Name</h4>
+              <h4 class="pt-3">Profile Name</h4>
           </div>
           <div class="card-body">
             <h6 class="card-subtitle mb-2 text-muted">${post.id}</h6>
@@ -46,7 +46,7 @@ getButton.addEventListener("click", function () {
                     <h6 class="card-subtitle pt-2 ps-2 mb-2 text-muted">NEW</h6>
                     <div class="ps-3 pt-3">
                         <div class="profile-picture w-25 rounded-circle"></div>
-                         <h4>Profile Name</h4>
+                         <h4 class="pt-3">Profile Name</h4>
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">${data[i].title}</h5>
