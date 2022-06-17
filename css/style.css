@@ -1,16 +1,15 @@
-.header {
+.header, .community-intro {
     background: linear-gradient(to right, grey , lightblue);
 }
 
 .profile .bg-profile {
-    position: relative;
     width: 50%;
 }
 
 .profile .profile-img {
     width: 15%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: -90px;
 }
 
 .profile .profile-img img {
@@ -21,7 +20,7 @@
 .input-post, .edit-post {
    position: fixed;
    width: 80%;
-   min-height: 70vh;
+   min-height: 65vh;
    background: linear-gradient(to top, grey , lightblue);
    border: 1px solid transparent;
    border-radius: 20px;
@@ -46,23 +45,25 @@
      transform: scale(1.05);
 }
 
-.footer {
+.footer, .profile-picture, .view-picture-two {
     background: linear-gradient(to left, grey , lightblue);
 }
 
 
-@media (max-width: 1025px) {
+@media (max-width: 769px) {
     .profile .profile-img {
-        top: 60%;
+       top: -70px;
     }
 }
 
 @media (max-width: 426px) {
     .profile .profile-img {
-        top: 43%;
+        top: -20px;
     }
 
     #edit-post, #delete-post, #view-more {
         margin: 0 !important;
     }
+
+   
 }

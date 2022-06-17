@@ -31,7 +31,7 @@ function getPosts() {
                 outPut +=  `  <div class="col-lg-4 col-md-6 mt-4">
                 <div class="card h-100">
                     <div class="ps-3 pt-3">
-                       <div class="profile-picture w-25">
+                       <div class="profile-pic w-25">
                           <img src ="${image}" alt="profile picture" width="100%" class="rounded-circle">
                        </div>
                        <h4>Comely Daniel</h4>
@@ -77,7 +77,7 @@ function createPost(e) {
                 outPut +=  `  <div class="col-lg-4 col-md-6 mt-4">
                 <div class="card h-100">
                     <div class="ps-3 pt-3">
-                       <div class="profile-picture w-25">
+                       <div class="profile-pic w-25">
                           <img src ="${image}" alt="profile picture" width="100%" class="rounded-circle">
                        </div>
                        <h4>Comely Daniel</h4>
@@ -172,7 +172,7 @@ function deletePost(id) {
                 outPut +=  `  <div class="col-lg-4 col-md-6 mt-4">
                 <div class="card h-100">
                     <div class="ps-3 pt-3">
-                       <div class="profile-picture w-25">
+                       <div class="profile-pic w-25">
                           <img src ="${image}" alt="profile picture" width="100%" class="rounded-circle">
                        </div>
                        <h4>Comely Daniel</h4>

@@ -1,11 +1,8 @@
 .community-intro {
-    background: linear-gradient(to right, grey , lightblue);
     min-height: 40vh;
-
 }
 
 .profile-picture {
-    background: linear-gradient(to left, grey , lightblue);
     height: 12vh;
 }
 
@@ -13,5 +10,11 @@
 @media (max-width: 769px) {
     .profile-picture {
         width: 18% !important;
+    }
+}
+
+@media (max-width: 321px) {
+    .profile-picture {
+       height: 10vh;
     }
 }
